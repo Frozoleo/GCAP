@@ -1,0 +1,118 @@
+/*****************************************************/
+/* volet d'action */
+div.sous_menu
+{
+	width: 200px;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	border-top: 1px solid #CEDC01;
+	border-bottom: 1px solid #CEDC01;
+}
+
+div.gauche
+{
+	left: 0px;
+	border-right: 1px solid #CEDC01;
+	border-left: 1px solid transparent;
+	box-shadow: 2px 2px 2px #707070;
+	border-radius: 0px 10px 10px 0px;
+}
+
+div.droite
+{
+	right: 0px;
+	border-right: 1px solid transparent;
+	border-left: 1px solid #CEDC01;
+	box-shadow: 2px 2px 2px #707070;
+	border-radius: 10px 0px 0px 10px;
+}
+
+div.n2
+{
+	margin-top: 100px;
+}
+
+div.n3
+{
+	margin-top: 500px;
+}
+
+
+a.traits
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	cursor: pointer;
+	z-index: 1000;
+	padding: 5px 0px 5px 0px;
+	text-decoration: none;
+}
+
+
+
+a.traits:after,
+a.traits:before 
+{
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+a.traits:hover:after,
+a.traits:hover:before 
+{
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #005DB7;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+a.traits:hover:before 
+{
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+
+
+div.element_menu
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2px 0px;
+}
+
+div.sous_menu span
+{
+	font-family: 'Nunito', sans-serif;
+	text-transform:capitalize;
+	font-size:15px;
+	color: #005DB7;  
+	padding:0px 10px;
+	font-weight: bold;
+}
+
+h2.sous_menu
+{
+	font-family: 'Nunito', sans-serif;
+	font-size: 26px;
+	color: #005DB7;
+	max-height: 40px;
+}

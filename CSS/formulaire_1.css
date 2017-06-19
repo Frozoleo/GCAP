@@ -1,0 +1,118 @@
+/*****************************************************/
+/* Bouton de sélection (créer, pousuivre, etc)*/
+input.button
+{
+    background-color: #CEDC01; 
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border-bottom-style: outset;
+	border-bottom-width: 5px;
+	border-bottom-color: rgba(206, 220, 1, 1);
+	border-right-style: outset;
+	border-right-width: 5px;
+	border-right-color: rgba(206, 220, 1, 1);
+}
+
+input.button:hover 
+{
+    font-weight: bold;
+}
+
+input.button:active 
+{
+	background-color: rgba(132, 138, 0, 1);
+	border-right-color: rgba(132, 138, 0, 1);
+	border-bottom-color: rgba(132, 138, 0, 1);
+}
+
+/*****************************************************/
+/* zone de texte monoligne*/
+input.saisie
+ {
+  padding: 10px;
+  border: solid 1px #fff;
+  box-shadow: inset 1px 1px 2px 0 #707070;
+  transition: box-shadow 0.3s;
+  margin: 10px 10px 10px 10px;
+}
+
+input.saisie:focus
+{
+  box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+
+/*****************************************************/
+/* Liste déroulante*/
+select 
+{
+    padding:10px;
+    margin: 10px 10px 10px 10px;
+	width : 300px;
+	font-size: 16px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+    select 
+	{
+		padding-right:18px
+	}
+}
+
+label.fleche 
+{
+	position:relative
+}
+
+label.fleche:after 
+{
+    content:'<>';
+    font:30px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:17px; top:-7px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+/*****************************************************/
+fieldset
+{
+    border:2px solid #CEDC01;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+	max-width:500px;
+	padding: 15px 32px;
+	text-align: center;
+}

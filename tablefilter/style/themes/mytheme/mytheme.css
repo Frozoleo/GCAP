@@ -1,0 +1,191 @@
+/** 
+ *	 tablefilter v0.4.39 by Max Guglielmi 
+ *	 build date: 2017-02-04T01:00:01.204Z 
+ *	 MIT License  
+ */
+
+/*
+background-image:-moz-linear-gradient(#002C58 , #005DB7);
+background-image:-webkit-linear-gradient(#002C58 , #005DB7);
+background-image:-o-linear-gradient(#002C58 , #005DB7);
+background-image:linear-gradient(#002C58 , #005DB7);
+*/
+ 
+/* tableau */
+table.TF {
+	border : none !important;
+}
+
+/* en-tête */
+table.TF th {
+	background: #39424b url("images/bg_headers.jpg") left top repeat-x;
+	border: none !important;
+	color: #fff
+}
+
+/* cellules */
+table.TF td {
+	border : 1px dotted #39424b;
+	padding: 5px
+}
+
+/* Champ de filtrage */
+.fltrow {
+	background-image:-moz-linear-gradient(#005DB7 , #151C26); !important;
+}
+
+.fltrow th,
+.fltrow td {
+	border-bottom: none !important;
+	border-right: none !important;
+	border-left: none !important;
+	border-top: none !important;
+	padding: 1px 3px 1px 3px !important;
+}
+
+.flt,
+select.flt,
+select.flt_multi,
+.flt_s,
+.single_flt,
+.div_checklist {
+	border: 1px solid #CEDC01 !important;
+}
+
+/* taille des champs de filtrages */
+input.flt {
+	width: 99% !important
+}
+
+/* ligne de gestion des pages */
+.inf {
+	background-image:-moz-linear-gradient(white , #005DB7) !important;
+	height: $min-height
+}
+
+/* bouton reset général */
+input.reset {
+	width: 53px;
+	background: transparent url("images/btn_filter.png") center center no-repeat !important
+}
+
+.helpBtn:hover {
+	background-color: transparent
+}
+
+/* bouton page suivante */
+.nextPage {
+	background: transparent url("images/btn_next_page.gif") center center no-repeat !important
+}
+
+/* bouton page précédante */
+.previousPage {
+	background: transparent url("images/btn_previous_page.gif") center center no-repeat !important
+}
+
+/* bouton première page */
+.firstPage {
+	background: transparent url("images/btn_first_page.gif") center center no-repeat !important
+}
+
+/* bouton dernière page */
+.lastPage {
+	background: transparent url("images/btn_last_page.gif") center center no-repeat !important
+}
+
+div.grd_Cont {
+	background: #81963b url("images/bg_headers.jpg") left top repeat-x !important;
+	border: 1px solid #ccc !important;
+	padding: 0 1px 1px 1px !important;
+}
+
+div.grd_Cont .even {
+	background-color: #CEDC01;
+	z-index: 1500;
+}
+
+div.grd_Cont .odd {
+	background-color: #fff;
+	z-index: 1500;
+}
+
+.even:hover,
+.even:active
+{
+	background-color: #848A00 !important;
+	cursor: pointer !important;
+}
+
+.odd:hover,
+.odd:active 
+{
+	background-color: #B1B1B1 !important;
+	cursor: pointer !important;
+}
+
+div.grd_headTblCont {
+	background-color: #ebecee !important;
+	border-bottom: none !important
+}
+
+div.grd_tblCont table {
+	border-right: none !important;
+}
+
+div.grd_tblCont table td {
+	border-bottom: 1px dotted #CEDC01;
+	border-right: 1px dotted #CEDC01
+}
+
+div.grd_tblCont table th,
+div.grd_headTblCont table th {
+	background: transparent url("images/bg_headers.jpg") 0 0 repeat-x !important;
+	border-bottom: 0 !important;
+	border-right: 1px dotted #d0d0d0 !important;
+	border-left: 0 !important;
+	border-top: 0 !important;
+	padding: 0 4px 0 4px !important;
+	color: #fff !important;
+	height: 35px !important
+}
+
+div.grd_headTblCont table td {
+	border-bottom: 1px dotted #39424b !important;
+	border-right: 1px dotted #fff !important;
+	border-left: 0 !important;
+	border-top: 0 !important;
+	background-color: #CEDC01 !important;
+	padding: 1px 3px 1px 3px !important
+}
+
+.grd_inf {
+	background-color: #d8d8d8;
+	border-top: 1px solid #d0d0d0 !important
+}
+
+.loader {
+	border: 0 !important;
+	background: #CEDC01 !important
+}
+
+.defaultLoader {
+	width: 32px;
+	height: 32px;
+	background: transparent url("images/img_loading.gif") 0 0 no-repeat !important
+}
+
+.even {
+	background-color: #CEDC01
+}
+
+.odd {
+	background-color: #fff
+}
+
+span.expClpFlt a.btnExpClpFlt:hover {
+	background-color: transparent !important
+}
+
+.activeHeader {
+	background: #81963b !important
+}

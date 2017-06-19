@@ -1,0 +1,155 @@
+/*****************************************************/
+div.tooltip_info, div.tooltip_projet
+{
+	position: absolute;
+	cursor: help;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: rgba(34, 34, 34, 1);
+	outline: none;
+}
+
+div.tooltip_info
+{
+	right: 150px;
+	top: 12px;
+}
+
+div.tooltip_projet
+{
+	left: 130px;
+	top: 25px;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	background: #005DB7 url(../Images/utilsateur.png) no-repeat center center;
+}
+
+p.infos
+{
+	text-align: justify;
+	color: rgba(0, 93, 183, 1);
+	margin: auto;
+}
+
+p.compte
+{
+	position: relative;
+	top : -6px;
+	right : -13px;
+	
+	font-size: 30px;
+	color: #CEDC01;
+	letter-spacing: 22px;
+}
+
+/* Cadre dynamique d'aide et d'info*/
+div.tooltip_info span, div.tooltip_projet span
+{
+	text-align: justify;
+    text-justify: inter-word;
+
+	visibility: hidden;
+	position: absolute;
+	z-index: 1500;
+	width: 300px;
+	padding: 10px;
+	border: 2px solid rgba(204, 204, 204, 1);
+	opacity: .9;
+	background-color: rgba(221, 221, 221, 1);
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+	text-shadow: 0 1px 0 rgba(255,255,255,.4);
+}
+
+div.tooltip_info span
+{
+	top: 89px;
+	left: -50px;
+	margin-left: -129px;
+}
+
+div.tooltip_projet span
+{
+	top: 79px;
+	right: -32px;
+	margin-right: -129px;
+}
+
+div.tooltip_info:hover, div.tooltip_projet:hover
+{
+	border: 0; 
+}
+
+/* Lorsque les tooltips sont survolés, les spans s'affiche*/
+div.tooltip_info:hover span, div.tooltip_projet:hover span
+{
+	visibility: visible;
+}
+
+/* Ajout des flèches triangulaire du span*/
+div.tooltip_info span:before,
+div.tooltip_projet span:before,
+div.tooltip_info span:after,
+div.tooltip_projet span:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1000;
+	top: -8px;
+	border-bottom: 8px solid rgba(221, 221, 221, 1);
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 0;
+}
+
+div.tooltip_info span:before,
+div.tooltip_info span:after
+{
+	left: 61%;
+	margin-left: -8px;
+}
+
+div.tooltip_projet span:before,
+div.tooltip_projet span:after
+{
+	right: 61%;
+	margin-right: -8px;
+}
+
+div.tooltip_info span:before,
+div.tooltip_projet span:before
+{
+	border-bottom-color: #ccc;
+	top: -9px;
+}
+
+/* Double triangle encadrant le texte des tooltips*/
+div#triangle-1 
+{
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 30px solid #CEDC01;
+}
+
+div#triangle-2 
+{
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 30px solid #CEDC01;
+}

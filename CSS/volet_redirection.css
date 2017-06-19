@@ -1,0 +1,39 @@
+/*****************************************************/
+/* Volet de redirection*/
+nav
+{
+	width : 70%;
+	margin-left: 15%;
+	border : 1px solid #CEDC01;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	box-shadow: 2px 2px 2px #707070;
+	text-align: center;
+}	
+
+nav ul
+{
+    list-style-type: none;
+	display: inline-block;
+	vertical-align: center;
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}

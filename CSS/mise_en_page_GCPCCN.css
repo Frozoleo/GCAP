@@ -1,0 +1,188 @@
+/*****************************************************/
+/* mise_en_page_GCPCCN */
+
+/********************************************************************************************************************************************/
+/******************************************************* Style de la page d'accueil *********************************************************/
+
+/* Champs de saisie */
+div.accueil
+{
+	display : flex;
+	margin : auto;
+	justify-content: center;
+}
+
+
+
+/* Bouton modifier, réinitialisé et supprimer*/
+div#bouton_multiple
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+/********************************************************************************************************************************************/
+/**************************************************** Style de la page de questionnaire *****************************************************/
+
+/*****************************************************/
+/* Cadre des questions et réponses du questionnaire*/
+div#conteneur_historique
+{
+	display : flex;
+	margin : auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Style d'une question*/
+p.question
+{
+	text-align : center;
+	font-size: x-large;
+	font-weight: bold;
+	background-color : #005DB7;			/*couleur officiel*/
+	border : 7px #005DB7 outset;
+	padding: 6px;
+}
+
+/* Style d'une technologie*/
+p.technologie
+{
+	text-align : center;
+	font-size: x-large;
+	font-weight: bold;
+	background-color : #CEDC01;			/*couleur officiel*/
+	border : 7px #CEDC01 outset;
+	padding: 6px;
+}
+
+/* Redimensionnement des images et positionnement*/
+img#non, img#oui
+{
+	display: block;
+	width: auto;
+	max-height: 150px;
+}
+
+img#non
+{
+	margin-left : 300px ;
+}
+
+img#oui
+{
+	margin-right : 300px ;
+}
+
+/*****************************************************/
+/* Cadre des input et labels de type radio */
+div#reponses
+{
+	display : flex;
+	width : 500px;
+	margin : auto;
+	justify-content: space-around;
+}
+
+/* Style de base des labels*/
+label.radio
+{
+	width: 200px;
+	border-radius: 3px;
+	border: 1px solid #D1D3D4;
+	position : relative;
+	margin-left : -250px;
+}
+
+/* Style de base des inputs (superposés aux labels pour garantir la zone de selection)*/
+input.radio:empty 
+{
+	position : relative;
+	width : 195px;
+	height : 47px;
+	top : 34px;
+	z-index : 1500;
+	opacity : 0;
+}
+
+/* Style des labels quand les inputs sont vides*/
+input.radio:empty ~ label 
+{
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	margin-top: 2em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before 
+{
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Style quand survolé mais non checké*/
+input.radio#oui:hover:not(:checked) ~ label#oui:before 
+{
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio#non:hover:not(:checked) ~ label#non:before 
+{
+	content:'\2718';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label
+{
+	color: #888;
+}
+
+/* Style quand survolé et checké*/
+input.radio#oui:checked ~ label#oui:before 
+{
+	content:'\2714';
+	text-indent: .9em;
+	color: black; /*#9CE2AE*/
+	background-color: #CEDC01;
+}
+
+input.radio#non:checked ~ label#non:before 
+{
+	content:'\2718';
+	text-indent: .9em;
+	color: black;
+	background-color: #8B3331;
+}
+
+input.radio:checked ~ label 
+{
+	color: #777;
+}
+
+/* Style quand selectioné (additif)*/
+input.radio#oui:focus ~ label#oui:before 
+{
+	box-shadow: 0 0 0 3px #999;
+}
+
+input.radio#non:focus ~ label#non:before 
+{
+	box-shadow: 0 0 0 3px #999;
+}

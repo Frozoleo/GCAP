@@ -1,0 +1,119 @@
+/*****************************************************/
+/* Titre "Guide de Choix PCCN*/
+h1.classique,
+h2.classique
+{
+	text-align : center;
+}
+
+/* Cadre du titre "Guide de Choix PCCN"*/
+header.classique,
+footer.classique
+{
+	border : 5px groove rgba(206, 220, 1, 1);
+	background: rgba(206, 220, 1, 1);
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 10px 10px 0px 0px;
+	z-index: 100;
+}
+
+header.classique
+{
+	width : 70%;
+	margin-left: 15%;
+}
+
+footer.classique
+{
+	position: absolute;
+	bottom: 0px;
+	
+	width : 30%;
+	margin-left: 35%;
+}
+
+footer.classique:hover
+{
+	cursor: pointer;
+	color:red;
+	border-color:red;
+	transition:all ease-in 0.2s;
+}
+
+/* Logo ERDF en background et en transparance*/
+body#accueil
+{
+    background: url("../Images/logo_ENEDIS_transparant.png") fixed no-repeat bottom center;
+	background-size: 800px auto;
+}
+
+/*****************************************************/
+/* Cadres des element d'id GCAP et Retour*/
+div.bas_page
+{
+	border-top: 1px solid #CEDC01;
+	border-bottom: 1px solid transparent;
+	box-shadow: 2px 2px 2px #707070;
+	position : fixed;
+	bottom : 0px;
+	
+	display : flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Logo du GCAP*/
+div#gauche
+{
+	left : 0px;
+	border-right: 1px solid #CEDC01;
+	border-left: 1px solid transparent;
+	border-radius: 0px 10px 0px 0px;
+	padding : 5px;
+	width : 130px;
+	height : 50px;
+}
+
+img#GCAP
+{
+	width: 100px;
+	max-height: 25px;
+}
+
+/* Lien de création de mail pour les retours (contacts)*/
+div#droite
+{
+	right : 0px;
+	border-left: 1px solid #CEDC01;
+	border-right: 1px solid transparent;
+	border-radius: 10px 0px 0px 0px;
+	width : 140px;
+	height : 60px;
+}
+
+img#Retour
+{
+	width: auto;
+	max-height: 55px;
+	margin-bottom : -10px;
+}
+
+/*****************************************************/
+
+div.separateur
+{
+	width : 1200px;
+	margin :auto;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	height: 125px;
+}
+
+hr
+{
+   width: 100%;
+   color: #005DB7;
+   height: 7px;
+}

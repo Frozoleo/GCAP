@@ -1,0 +1,17 @@
+/*****************************************************/
+/* mise_en_page_OE */
+
+div.corps
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 150px 50px 150px;
+}
+
+div.corps.resolution
+{
+	color : black !important;
+	width : 80%;
+}

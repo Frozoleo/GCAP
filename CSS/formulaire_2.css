@@ -1,0 +1,358 @@
+div#materiel_plus
+{
+	/*display: flex;
+	justify-content: center;
+	align-items: flex-start;*/
+}
+
+.form-style-5 div.form
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	margin: 10px auto;
+    padding: 20px 20px 0px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.form-style-5
+{
+	max-width: 60%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.form-style-5.accueil
+{
+	max-width: 100%;
+}
+
+.form-style-5 fieldset
+{
+    border: none;
+	max-width: none;
+	padding: 15px 32px 0px 32px;
+}
+.form-style-5 legend 
+{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.form-style-5 legend#descriptif
+{
+	width: 100%;
+}
+
+.form-style-5 label.classique
+{
+    display: block;
+    margin-bottom: 8px;
+	color: black !important; 
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 input[type="tel"],
+.form-style-5 input[type="password"],
+.form-style-5 div.cadre_upload,
+.form-style-5 label.file,
+.form-style-5 textarea,
+.form-style-5 select 
+{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+   
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 input[type="tel"]:focus,
+.form-style-5 input[type="password"]:focus,
+.form-style-5 label.file:hover,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus
+{
+    background: #d2d9dd;
+}
+
+.form-style-5 select
+{
+    /*-webkit-appearance: menulist-button;*/
+	-webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+	height:35px;
+}
+
+.form-style-5 label.fleche
+{
+	position:relative;
+}
+
+.form-style-5 img.aide 
+{
+	padding: 2px;
+    border:2px dashed #005DB7;
+	border-radius: 50px;
+    pointer-events:none;
+	cursor: help;
+	z-index: 10000;
+}
+
+/* Effect 9 */
+.form-style-5 img.aide  {
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+.form-style-5 img.aide:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    box-shadow: 0 0 0 3px #fff;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+/* Effect 9b */
+.form-style-5 img.aide:hover:after 
+ {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+.form-style-5 img.aide:hover 
+{
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+/*.form-style-5 img.aide :hover i 
+{
+    color: #fff;
+}*/
+
+
+
+
+.form-style-5 label.fleche:after 
+{
+    content:'<>';
+    font:25px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:7px; top:-7px;
+    padding:0 0 2px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+
+.form-style-5 .number {
+    background: #005DB7;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"]
+{
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: white;
+    margin: 0 auto;
+    background: #005DB7;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+	
+   	width: 400px;
+	
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px;
+	border-bottom-style: outset;
+	border-bottom-width: 5px;
+	border-bottom-color: #005DB7;
+	border-right-style: outset;
+	border-right-width: 5px;
+	border-right-color: #005DB7;
+	
+    margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+    font-weight: bold;
+}
+
+.form-style-5 input[type="submit"]:active,
+.form-style-5 input[type="button"]:active 
+{
+	background-color: rgba(0, 44, 88, 1); /*#3e8e41*/
+	border-right-color: rgba(0, 44, 88, 1);
+	border-bottom-color: rgba(0, 44, 88, 1);
+}
+
+.form-style-5 input:focus:invalid,
+.form-style-5 textarea:focus:invalid
+{ /* when a field is considered invalid by the browser */
+    background: #fff url(../Images/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+
+.form-style-5 input:required:valid,
+.form-style-5 textarea:required:valid
+ { /* when a field is considered valid by the browser */
+    background: #fff url(../Images/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+/*****************************************************/
+
+.Invisible
+{
+  display:none;
+  opacity:0;
+  /*transition:all ease-in 0.5s;*/
+}
+
+.Visible
+{
+  display:block;
+  opacity:1;
+  /*transition:all ease-in 0.5s;*/
+}
+
+/*****************************************************/
+
+.form-style-5 #info_upload
+{
+	display:none;
+	margin:auto;
+	padding:10px 20px;
+	width:400px;
+	height:auto;
+	overflow:hidden;
+	background: #d2d9dd;
+	border-radius:4px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	font-size: 16px;
+}
+
+.form-style-5 #nom span,
+.form-style-5 #taille span, 
+.form-style-5 #type span 
+{
+  color:#CEDC01;
+}
+
+.form-style-5 label.file
+{
+  padding:10px;
+  width:auto;
+  max-width:300px;
+  height:auto;
+  cursor:pointer;
+  -webkit-transition:0.2s ease all;
+     -moz-transition:0.2s ease all;
+      -ms-transition:0.2s ease all;
+       -o-transition:0.2s ease all;
+          transition:0.2s ease all;
+}
+
+.form-style-5 [type=file]
+{
+  display:none;
+}
+
+/*****************************************************/
+
+.form-style-5 label.ajouter,
+.form-style-5 label.supprimer
+{
+	position: relative;
+	display: block;	
+	width: 100%;
+}
+
+.form-style-5 label.ajouter.onhover div.after
+{
+	background: black url(../Images/ajouter.png) no-repeat center center !important;
+	box-shadow: 0 0 0 10px black;
+	cursor:pointer;
+}
+
+.form-style-5 label.ajouter.onhover input,
+.form-style-5 label.ajouter.onhover select
+{
+	box-shadow: 0px 0px 48px 18px rgba(0,93,183,0.63);
+	cursor:pointer;
+}
+
+.form-style-5 label.ajouter div.after
+{
+	position: absolute;
+	display: block;
+	top: 0;
+	
+	box-shadow: 0 0 0 10px #005DB7;
+	left: -70.35px;
+	height: 30px;
+	width: 30px;
+	content: "";
+	
+	background: #005DB7 url(../Images/ajouter.png) no-repeat center center;
+	border-radius: 50%;
+}
